@@ -28,7 +28,7 @@ body {
 }
 
 .site-header {
-  min-height: 88vh;
+  min-height: 84vh;
   color: white;
   background:
     radial-gradient(circle at 78% 22%, rgba(214, 176, 109, 0.42), transparent 20%),
@@ -73,11 +73,15 @@ body {
 .hero {
   width: min(1120px, calc(100% - 44px));
   margin: 0 auto;
-  padding: 95px 0 130px;
+  padding: 82px 0 142px;
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
-  gap: 54px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 410px);
+  gap: 58px;
   align-items: center;
+}
+
+.hero-text {
+  min-width: 0;
 }
 
 .eyebrow {
@@ -89,27 +93,29 @@ body {
 
 h1 {
   margin: 0;
-  font-size: clamp(4.8rem, 13vw, 10.5rem);
-  line-height: 0.88;
-  letter-spacing: -0.075em;
+  max-width: 720px;
+  font-size: clamp(4.4rem, 8.5vw, 7.8rem);
+  line-height: 0.93;
+  letter-spacing: -0.065em;
 }
 
 .hero h2 {
-  max-width: 780px;
+  max-width: 650px;
   margin: 30px 0 0;
-  font-size: clamp(1.55rem, 3vw, 2.65rem);
+  font-size: clamp(1.45rem, 2.5vw, 2.25rem);
   font-weight: 520;
-  line-height: 1.25;
+  line-height: 1.28;
 }
 
 .hero-art {
   margin: 0;
   align-self: center;
+  justify-self: end;
 }
 
 .hero-art img {
   width: 100%;
-  max-width: 460px;
+  max-width: 410px;
   display: block;
   border-radius: 24px;
   background: #f7f1e7;
@@ -175,19 +181,30 @@ footer {
   color: var(--muted);
 }
 
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 68px 0 120px;
+  }
+
+  h1 {
+    max-width: 100%;
+  }
+
+  .hero h2 {
+    max-width: 760px;
+  }
+
+  .hero-art {
+    justify-self: start;
+    max-width: 390px;
+  }
+}
+
 @media (max-width: 850px) {
   .nav {
     align-items: flex-start;
     flex-direction: column;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 70px 0 115px;
-  }
-
-  .hero-art {
-    max-width: 380px;
   }
 
   main {
@@ -201,7 +218,11 @@ footer {
   }
 
   h1 {
-    font-size: clamp(4rem, 18vw, 6rem);
+    font-size: clamp(3.8rem, 17vw, 5.6rem);
+  }
+
+  .hero {
+    padding-top: 54px;
   }
 
   .card {
