@@ -8,24 +8,48 @@
 </head>
 
 <body>
-  <header class="hero">
-    <nav>
-      <div class="brand">WOMBATS 2027</div>
-      <div class="links">
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#">WOMBATS 2027</a>
+      <div class="nav-links">
         <a href="#about">About</a>
         <a href="#speakers">Speakers</a>
+        <a href="#participants">Participants</a>
         <a href="#schedule">Schedule</a>
         <a href="#practical">Practical</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
 
-    <div class="hero-content">
-      <p class="tagline">Bumping up the characteristic down under</p>
-      <h1>WOMBATS 2027</h1>
-      <h2>Workshop On Modular Behaviour Across Tensor Structures</h2>
-      <p class="date">University of Sydney · 29 November – 3 December 2027</p>
-    </div>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">University of Sydney · 29 November – 3 December 2027</p>
+        <h1>WOMBATS 2027</h1>
+        <h2>Workshop On Modular Behaviour Across Tensor Structures</h2>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 300" role="img">
+          <path class="hill" d="M22 245 C80 155, 150 130, 218 177 C275 217, 326 153, 398 229 L398 300 L22 300 Z"/>
+          <circle class="node" cx="92" cy="78" r="8"/>
+          <circle class="node" cx="168" cy="48" r="8"/>
+          <circle class="node" cx="248" cy="76" r="8"/>
+          <circle class="node" cx="318" cy="44" r="8"/>
+          <path class="wire" d="M92 78 C130 34, 142 92, 168 48"/>
+          <path class="wire" d="M168 48 C205 94, 225 32, 248 76"/>
+          <path class="wire" d="M248 76 C278 24, 295 90, 318 44"/>
+          <ellipse class="wombat-body" cx="220" cy="183" rx="112" ry="61"/>
+          <circle class="wombat-head" cx="128" cy="171" r="49"/>
+          <circle class="ear" cx="105" cy="133" r="14"/>
+          <circle class="ear" cx="143" cy="130" r="13"/>
+          <circle class="eye" cx="114" cy="164" r="4"/>
+          <ellipse class="nose" cx="83" cy="178" rx="12" ry="8"/>
+          <path class="mouth" d="M96 189 C108 199, 124 199, 136 190"/>
+          <ellipse class="foot" cx="166" cy="235" rx="28" ry="13"/>
+          <ellipse class="foot" cx="278" cy="236" rx="30" ry="13"/>
+        </svg>
+      </div>
+    </section>
   </header>
 
   <main>
@@ -55,6 +79,11 @@
       <p>Invited speakers will be announced here once confirmed.</p>
     </section>
 
+    <section id="participants" class="card">
+      <h2>Participants</h2>
+      <p>Participants will be listed here closer to the workshop.</p>
+    </section>
+
     <section id="schedule" class="card">
       <h2>Schedule</h2>
       <p>The schedule will appear here closer to the workshop.</p>
@@ -72,14 +101,21 @@
       <p>Joe Baine, Kevin Coulembier, and Dani Tubbenhauer.</p>
     </section>
 
-    <section id="contact" class="card">
+    <section id="contact" class="card contact-card">
       <h2>Contact</h2>
-      <p>For questions, please contact one of the organisers.</p>
+      <p>
+        For questions, please contact the organisers:
+      </p>
+      <p>
+        <a href="mailto:jpbaine@gmail.com">jpbaine@gmail.com</a><br>
+        <a href="mailto:kevin.coulembier@sydney.edu.au">kevin.coulembier@sydney.edu.au</a><br>
+        <a href="mailto:daniel.tubbenhauer@sydney.edu.au">daniel.tubbenhauer@sydney.edu.au</a>
+      </p>
     </section>
   </main>
 
   <footer>
-    WOMBATS 2027 · Workshop On Modular Behaviour Across Tensor Structures
+    <p>WOMBATS 2027 · Workshop On Modular Behaviour Across Tensor Structures</p>
   </footer>
 </body>
 </html>
